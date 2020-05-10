@@ -10,12 +10,57 @@
 <body>
     <p>day 1 starts</p>
     <button id="go-back" onclick="goBack()">Go Back</button>
-    <button id="planner-btn">Planner Button</button>
+    <button onclick="randomize()">Randomize</button>
+    <div class="card"><img id="catImg1" src="" alt="creamheroes-dd"></div>
+    <div class="card"><img src="images/creamheroes-tt.jpg" alt="creamheroes-tt"></div>
+    <div class="card"><img src="images/creamheroes-momo.jpg" alt="creamheroes-momo"></div>
+    <div class="card"><img src="images/creamheroes-coco.jpg" alt="creamheroes-coco"></div>
+    <div class="card"><img src="images/creamheroes-chuchu.jpg" alt="creamheroes-chuchu"></div>
+    <div class="card"><img src="images/creamheroes-lulu.jpg" alt="creamheroes-lulu"></div>
+    <div class="card"><img src="images/creamheroes-lala.jpg" alt="creamheroes-lala"></div>
 
     <script>
+        let data = [
+            { id: 0, name: 'dd' },
+            { id: 1, name: 'dd' },
+            { id: 2, name: 'momo' },
+            { id: 3, name: 'coco' },
+            { id: 4, name: 'chuchu' },
+            { id: 5, name: 'lulu' },
+            { id: 6, name: 'lala' },
+        ]
+
         function goBack() {
             window.history.back();
         }
+
+        function randomize() {
+            for (i = 0; i <= 14; i++) {
+                let catName;
+                let randomNumber = Math.floor(Math.random() * 10);
+
+                if (!(randomNumber >= 0 && randomNumber <= 6)) {
+                    randomNumber = 0;
+                }
+                catName = data[randomNumber].name;
+                document.getElementById("catImg1").src = `images/creamheroes-${catName}.jpg`;
+                console.log(`cat name is ${catName}`);
+            }
+            
+        }
+
+        function loadGame() {
+            // display randomly
+        }
+
+        function onFirstCardClick() {
+            // starts timer
+        }
+
+        function onCardClick() {
+            // matches one card with another
+        }
     </script>
+
 </body>
 </html>

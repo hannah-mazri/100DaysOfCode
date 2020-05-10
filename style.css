@@ -18,15 +18,24 @@ a {
      padding: 8px;
  }
 
+ img {
+     width: 143px;
+     height: 143px;
+    padding: 0;
+    margin: 0;
+ }
+
  button:hover {
      cursor: pointer;
      background-color: pink;
  }
 
  .card {
-     border: purple 1px solid;
+     border: gray 1px solid;
      border-radius: 3px;
      background-color: powderblue;
      margin: 8px 0;
      padding: 8px;
+     width: fit-content;
+     /* height: fit-content; */
  }
