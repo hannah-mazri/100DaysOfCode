@@ -30,12 +30,20 @@ a {
      background-color: pink;
  }
 
+ .card-container {
+     display: flex;
+ }
+
  .card {
      border: gray 1px solid;
      border-radius: 3px;
-     background-color: powderblue;
-     margin: 8px 0;
+     background-color: rgb(233, 207, 185);
+     margin: 8px;
      padding: 8px;
      width: fit-content;
      /* height: fit-content; */
+ }
+
+ .card:first-child {
+     margin-left: 0;
  }
