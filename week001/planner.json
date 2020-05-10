@@ -1,0 +1,7 @@
+{
+    "activities":[
+        { "id":1, "date":"2020-05-11" , "activity":"Coding Log Pt 1" },
+        { "id":2, "date":"2020-05-12" , "activity":"Coding Log Pt 2" },
+        { "id":3, "date":"2020-05-13" , "activity":"Coding Log Pt 3" }
+    ]
+}
