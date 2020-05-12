@@ -30,6 +30,18 @@ a {
      background-color: pink;
  }
 
+ ul {
+     padding: 0;
+ }
+ 
+ li {
+     border: gray 1px solid;
+     border-radius: 4px;
+     padding: 8px;
+     margin-bottom: 8px;
+     list-style-type: none;
+ }
+
  .card-container {
      display: flex;
  }
