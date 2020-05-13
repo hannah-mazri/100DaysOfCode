@@ -39,6 +39,7 @@ a {
      border-radius: 4px;
      padding: 8px;
      margin-bottom: 8px;
+     width: fit-content;
      list-style-type: none;
  }
 
@@ -46,15 +47,14 @@ a {
      display: flex;
  }
 
- .card {
+ /* .card {
      border: gray 1px solid;
      border-radius: 3px;
      background-color: rgb(233, 207, 185);
      margin: 8px;
      padding: 8px;
      width: fit-content;
-     /* height: fit-content; */
- }
+ } */
 
  .card:first-child {
      margin-left: 0;
